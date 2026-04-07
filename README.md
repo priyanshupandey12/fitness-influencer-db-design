@@ -86,8 +86,8 @@ Links clients to plans they've enrolled in.
 | `subscriptions_id` | SERIAL | PRIMARY KEY |
 | `client_id` | INT | FOREIGN KEY → `client.client_id`, NOT NULL |
 | `plan_id` | INT | FOREIGN KEY → `plans.plan_id`, NOT NULL |
-| `start_date` | DATE | — |
-| `end_date` | DATE | — |
+| `start_date` | DATE | NOT NULL |
+| `end_date` | DATE | NOT NULL |
 | `status` | VARCHAR(20) | CHECK (`active`, `completed`, `cancelled`) |
 | `created_at` | TIMESTAMP | — |
 | `updated_at` | TIMESTAMP | — |
@@ -183,8 +183,5 @@ client ─────────────┬──> sessions <── traine
 
 
 
-
-
----
 
 > Built with 💪 for fitness enthusiasts and professional trainers alike.
