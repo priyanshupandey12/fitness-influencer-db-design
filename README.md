@@ -146,7 +146,6 @@ Scheduled training sessions between a client and a trainer.
 | session_type | VARCHAR(30) | CHECK: `live_group` or `one_on_one` |
 | status | VARCHAR(20) | CHECK: `scheduled`, `completed`, or `cancelled` |
 | scheduled_at | DATE | NOT NULL |
-| meeting_link | TEXT | — |
 | created_at | — | — |
 | updated_at | — | — |
 
